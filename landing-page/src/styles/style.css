@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  --section-width: 90%;
+  /* colors */
+
+  /* primary */
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+
+  /* nuetral */
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Dark-Blue: hsl(233, 12%, 13%);
+  --Pale-Red: hsl(12, 93%, 83%);
+  --Light-Gray: hsl(0, 0%, 98%);
+
+  /* Typography */
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 0.815rem;
+  --fs-400: 0.875rem;
+  --fs-500: 0.915rem;
+  --fs-600: 1rem;
+  --fs-700: 1.875rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.5rem;
+
+  --fs-body: var(--fs-400);
+  --fs-nav: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-button: var(--fs-300);
+
+  --line-height: 2rem;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: var(--fs-600);
+    --fs-nav: var(--fs-400);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+  }
+
+  section .text {
+    margin: 0;
+    line-height: var(--line-height);
+    text-align:justify;
+  }
+}
+
+
+.short-text{
+  max-width: 20rem;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-600);
+  color:var(--Dark-Grayish-Blue)
+}
+
+a {
+  text-decoration: none;
+}
+
+.get-started-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 1.2rem;
+  border: none;
+  background-color: var(--Bright-Red);
+  color: var(--Light-Gray);
+  font-weight: var(--fs-400);
+  font-size: var(--fs-button);
+}
+
+.get-started-btn:hover {
+  background-color: var(--Pale-Red);
+  /* color: var(--Pale-Red); */
+}
+
+
+
+
+body {
+  font-size: var(--fs-body);
+  background-image: url(../assets/images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top -2rem right -4rem;
+  background-size: 60%;
+}
+
+@media (max-width: 50em) {
+  body {
+    background-size: 100%;
+  }
+}
+
+section {
+  display: flex;
+  max-width: var(--section-width);
+  margin: 2rem auto;
+}
+
+.text {
+  margin: 1rem 1rem;
+  line-height: var(--line-height);
+}

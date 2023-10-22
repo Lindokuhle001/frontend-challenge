@@ -1,21 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Manage landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/header.css" />
+    <link rel="stylesheet" href="/src/styles/header-section.css" />
+    <script type="module" defer src="/src/main.ts"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Mentor | Manage landing page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/style.css">
-  <script type="module" defer src="/src/main.ts"></script>
-</head>
+  <body>
+    <div id="overlay" class="overlay"></div>
+    <header>
+      <a href="#"><img src="./src/assets/images/logo.svg" alt="logo" /></a>
+      <nav id="nav">
+        <ul id="nav-items" role="list">
+          <li>Pricing</li>
+          <li>Product</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Community</li>
+        </ul>
+      </nav>
 
-<body>
-  <h1>Hello there</h1>
-  <script type="module" src="/main.js"></script>
-</body>
+      <div class="menu">
+        <img
+          src="./src/assets/images/icon-hamburger.svg"
+          alt="open menu"
+          id="open-menu"
+          class="active"
+        />
+        <img
+          src="./src/assets/images/icon-close.svg"
+          alt="close menu"
+          id="close-menu"
+          class="inactive"
+        />
+      </div>
 
+      <button id="get-started-btn-header" class="get-started-btn">
+        Get Started
+      </button>
+    </header>
+
+    <section id="header-section">
+      <section id="bring-everyone-together" class="container">
+        <h1>
+          Bring everyone <br />
+          together to build <br />
+          better products.
+        </h1>
+        <p class="text short-text">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view.
+        </p>
+        <button class="get-started-btn">Get Started</button>
+      </section>
+      <section id="images" class="container">
+        <img src="./src/assets/images/illustration-intro.svg" alt="3 stats images" />
+      </section>
+    </section>
+
+ <!--    <section id="about">
+      <section class="container">
+        <h2>What’s different about Manage?</h2>
+        <p class="text">
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </p>
+      </section>
+      <section class="container">
+        <ol class="about-list">
+          <li>
+            <h3>Track company-wide progress</h3>
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </li>
+          <li>
+            <h3>Advanced built-in reports S</h3>
+            <p class="text">
+              et internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </li>
+          <li>
+            <h3>Everything you need in one place</h3>
+            <p class="text">
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </section>
+    <section id="testimonials">
+      <h2>What they’ve said</h2>
+      <div id="testimonial-cards">
+        <div class="testimonial-card">
+          <img src="./src/assets/images/avatar-anisha.png" alt="profile picture" />
+          <h2>Anisha Li</h2>
+          <p class="text">
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <img src="./src/assets/images/avatar-ali.png" alt="profile picture" />
+          <h2>Ali Bravo</h2>
+          <p class="text">
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <img src="./src/assets/images/avatar-richard.png" alt="profile picture" />
+          <h2>Richard Watts</h2>
+          <p class="text">
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can’t stop recommending them to everyone I
+            talk to!”
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <img src="./src/assets/images/avatar-shanai.png" alt="profile picture" />
+          <h2>Shanai Gough</h2>
+          <p class="text">
+            “Their software allows us to track, manage and collaborate on our
+            projects from anywhere. It keeps the whole team in-sync without
+            being intrusive.”
+          </p>
+        </div>
+      </div>
+      <button class="get-started-btn">Get Started</button>
+    </section>
+    <section id="Simplify">
+      <h2>Simplify how your team works today.</h2>
+      <button id="get-started-btn-simplify" class="get-started-btn">
+        Get Started
+      </button>
+    </section>
+
+    <footer>
+      Home Pricing Products About Us Careers Community Privacy Policy Updates in
+      your inbox… Go Copyright 2020. All Rights Reserved
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">lindokuhle shabalala</a>.
+      </div>
+    </footer> -->
+  </body>
 </html>
