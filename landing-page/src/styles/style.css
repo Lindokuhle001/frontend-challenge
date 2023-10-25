@@ -27,7 +27,6 @@ body {
 
   /* nuetral */
   --Dark-Grayish-Blue: hsl(227, 12%, 61%);
-  --Dark-Blue: hsl(233, 12%, 13%);
   --Pale-Red: hsl(12, 93%, 83%);
   --Light-Gray: hsl(0, 0%, 98%);
 
@@ -69,16 +68,15 @@ body {
   section .text {
     margin: 0;
     line-height: var(--line-height);
-    text-align:justify;
+    text-align: justify;
   }
 }
 
-
-.short-text{
+.short-text {
   max-width: 20rem;
   font-family: var(--ff-primary);
   font-size: var(--fs-600);
-  color:var(--Dark-Grayish-Blue)
+  color: var(--Dark-Grayish-Blue);
 }
 
 a {
@@ -101,9 +99,6 @@ a {
   background-color: var(--Pale-Red);
   /* color: var(--Pale-Red); */
 }
-
-
-
 
 body {
   font-size: var(--fs-body);
@@ -128,4 +123,19 @@ section {
 .text {
   margin: 1rem 1rem;
   line-height: var(--line-height);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-primary);
+  color: var(--Dark-Blue);
+}
+h2 {
+  font-size: var(--fs-700);
+}
+
+h3 {
+  font-size: var(--fs-600);
 }
